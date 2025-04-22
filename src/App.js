@@ -1,5 +1,9 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+import { Vitessce } from 'vitessce';
+import { myViewConfig } from './my-view-config';
 
 function App() {
   return (
@@ -18,6 +22,12 @@ function App() {
           Learn React
         </a>
       </header>
+
+      {/* Vitessce Viewer */}
+      <div style={{ padding: '2rem' }}>
+        <h2>Vitessce Viewer</h2>
+        <Vitessce config={myViewConfig} theme="light" />
+      </div>
     </div>
   );
 }
